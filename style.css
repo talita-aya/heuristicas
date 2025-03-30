@@ -104,6 +104,7 @@ header button:hover {
   gap: 1rem;
   position: relative;
   box-shadow: 0px 4px 4px 0px #00000026;
+  overflow: hidden;
 }
 
 .points .number {
@@ -176,7 +177,7 @@ article label h2 {
   font-weight: 900;
   letter-spacing: 8%;
   color: transparent;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #262626; 
 }
 
@@ -302,4 +303,64 @@ footer div p {
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #0A0A0A;
+}
+
+.dark-mode * {
+  color: #e5e5e5;
+}
+
+.dark-mode header,
+.dark-mode .container-box,
+.dark-mode .left-container,
+.dark-mode .right-container,
+.dark-mode footer {
+  background-color: #0A0A0A;
+  border-color: #262626;
+}
+
+.dark-mode header button {
+  background-color: #0A0A0A;
+  border-color: #262626;
+  box-shadow: 0px 2px 2px 0px #E5E5E529;
+
+}
+
+.dark-mode .points {
+  box-shadow: 0px 2px 2px 0px #E5E5E529;
+}
+
+.dark-mode article, .dark-mode .checklist {
+  border-color: #373737;
+}
+
+.dark-mode article label h2 {
+  color: transparent;
+  -webkit-text-stroke-color: #e5e5e5;
+}
+
+.dark-mode article:hover {
+  box-shadow: 0px 0px 8px 0px #3f457769;
+}
+
+.dark-mode .checklist-item input[type="checkbox"] {
+  border-color: #e5e5e5;
+}
+
+.dark-mode .checklist-item  input[type="checkbox"]::before {
+  box-shadow: inset 1rem 1rem #0A0A0A;
+}
+
+.dark-mode .checklist-item input[type="checkbox"]:checked {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.dark-mode .checklist-item input[type="checkbox"]:hover {
+  border-color: #e5e5e5;
+  opacity: 0.8;
 }
