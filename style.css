@@ -35,13 +35,17 @@ body {
   grid-area: 1 / 8 / 2 / 13;
 }
 
-header {
+header{
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 4rem;
   border-bottom: solid 1px #e5e5e5;
+  position: fixed;
+  background-color: #fafafa;
+  z-index: 99;
 }
 
 header p {
@@ -66,7 +70,7 @@ header button:hover {
 }
 
 .title-points {
-  padding: 2rem 0;
+  padding: 7rem 0 2rem 0;
 }
 
 .title {
@@ -130,6 +134,10 @@ header button:hover {
   right: 0px;
 }
 
+.heuristics-list {
+  padding-bottom: 4rem;
+}
+
 article {
   border: 1px solid #D4D4D4;
   margin-bottom: 1.5rem;
@@ -139,6 +147,10 @@ article {
 
 article:hover {
   box-shadow: 0px 0px 8px 0px #737dd369;
+}
+
+article:last-child {
+  margin-bottom: 0;
 }
 
 article label {
@@ -212,8 +224,82 @@ article label p {
 .checklist-item {
   display: flex;
   gap: 1rem;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.checklist-item label {
+  cursor: pointer;
 }
 
 .checklist-item input[type="checkbox"] {
-  background-color: red;
+  appearance: none;
+  position: relative;
+  min-width: 16px;
+  min-height: 16px;
+  border: 0.125rem solid #262626;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.checklist-item  input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: 0.125s transform ease-in-out;
+  box-shadow: inset 1rem 1rem #fafafa;
+}
+
+.checklist-item input[type="checkbox"]:checked {
+  background-color: #262626;
+  border-color: #262626;
+}
+
+.checklist-item input[type="checkbox"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.checklist-item input[type="checkbox"]:hover {
+  border-color: #262626;
+  opacity: 0.8;
+}
+
+.checklist-item input[type="checkbox"]:hover + label {
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-top: solid 1px #e5e5e5;
+  gap: 2rem;
+}
+
+footer p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div p {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
 }
