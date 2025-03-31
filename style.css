@@ -98,13 +98,14 @@ header button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #4888b3;
+  background-color: #ac2e2e;
   padding: 2rem;
   border-radius: 16px;
   gap: 1rem;
   position: relative;
   box-shadow: 0px 4px 4px 0px #00000026;
   overflow: hidden;
+  transition: background-color 0.5s ease;
 }
 
 .points .number {
@@ -127,7 +128,7 @@ header button:hover {
   background-color: transparent;
 }
 
-.points img {
+.points .icon {
   width: 146px;
   height: 146px;
   position: absolute;
