@@ -27,13 +27,13 @@ body {
 
 .left-container {
   grid-column: span 7 / span 7;
-  margin: 7rem 0 1.7rem 0;
+  margin: 7rem 0 2.5rem 0;
 }
 
 .right-container {
   grid-column: span 5 / span 5;
   grid-column-start: 8;
-  margin: 7rem 0;
+  margin: 7rem 0 2.5rem 0;
 }
 
 header {
@@ -183,7 +183,8 @@ article label p {
   gap: 24px;
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: sticky;
+  top: 7rem;
   margin-right: 2.5rem;
 }
 
