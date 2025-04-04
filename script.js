@@ -135,3 +135,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+const checklist = document.querySelector('.checklist');
+const wrapper = document.querySelector('.checklist-wrapper');
+
+function toggleGradients() {
+  const scrollTop = checklist.scrollTop;
+  const scrollHeight = checklist.scrollHeight;
+  const clientHeight = checklist.clientHeight;
+
+  wrapper.classList.toggle('at-top', scrollTop === 0);
+  wrapper.classList.toggle('at-bottom', scrollTop + clientHeight >= scrollHeight);
+}
+
+checklist.addEventListener('scroll', toggleGradients);
+window.addEventListener('load', toggleGradients);
