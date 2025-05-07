@@ -30,37 +30,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const checklistItems = [
-    { id: "item1", texto: "O texto é direto e fácil de entender, sem o uso de termos técnicos.", valor: 10 },
-    { id: "item2", texto: "A interface não apresenta mais informações do que o necessário para a tarefa.", valor: 12 },
-    { id: "item4", texto: "As fontes devem ter no mínimo 16px para corpo de texto e 18-24px para títulos e cabeçalhos.", valor: 10 },
-    { id: "item5", texto: "Elementos importantes são destacados através de tamanho, peso ou cor da fonte.", valor: 14 },
-    { id: "item6", texto: "Botões e toques interativos devem ter no mínimo 48px de altura.", valor: 12 },
-    { id: "item7", texto: "Botões devem ser posicionados na parte inferior da interface para evitar que a mão do usuário obstrua a tela durante a interação.", valor: 10 },
-    { id: "item8", texto: "Garanta que haja um espaçamento de 8px a 16px entre os botões para evitar cliques acidentais.", valor: 11 },
-    { id: "item9", texto: "Informações essenciais são apresentadas de diferentes formas (texto, ícones, áudio, etc.).", valor: 13 },
-    { id: "item11", texto: "Ícones são usados de forma clara e intuitiva, ajudando a ilustrar a informação sem confundir.", valor: 12 },
-    { id: "item12", texto: "As cores são usadas de forma consistente para destacar elementos importantes, gerar familiaridade e facilitar a compreensão.", valor: 15 },
-    { id: "item13", texto: "O conteúdo é apresentado em etapas, permitindo o aprendizado gradual.", valor: 14 },
-    { id: "item14", texto: "O usuário é informado sobre seu avanço de maneira clara.", valor: 12 },
-    { id: "item15", texto: "O design é limpo, evitando sobrecarga visual e permitindo foco nas tarefas principais.", valor: 15 },
-    { id: "item16", texto: "O usuário recebe respostas e orientações durante a navegação.", valor: 10 },
-    { id: "item17", texto: "A interface se ajusta com base no nível do usuário, oferecendo desafios apropriados.", valor: 13 },
-    { id: "item18", texto: "A interface oferece conteúdos e dicas que se adaptam às preferências e necessidades do usuário.", valor: 14 },
-    { id: "item19", texto: "O contraste entre texto e fundo é suficiente para garantir legibilidade em diferentes condições de iluminação.", valor: 16 },
-    { id: "item20", texto: "A interface adota navegação de único nível para evitar estruturas de menus complexos.", valor: 12 },
-    { id: "item22", texto: "O progresso é informado continuamente, incentivando o usuário a seguir adiante.", valor: 16 },
-    { id: "item23", texto: "O usuário sabe exatamente o que precisa fazer para continuar avançando.", valor: 14 },
-    { id: "item25", texto: "A velocidade das animações deve ser reduzida, permitindo que o usuário compreenda claramente a interação e os movimentos na interface.", valor: 12 },
-    { id: "item27", texto: "Quando necessário, a interface sugere melhorias de forma amigável e útil.", valor: 14 },
-    { id: "item28", texto: "O feedback é focado no encorajamento, não na crítica.", valor: 13 },
-    { id: "item29", texto: "O feedback é fornecido através de elementos visuais (ex: ícones, cores) e sonoros (ex: notificações, alertas) de forma integrada.", valor: 15 },
-    { id: "item30", texto: "Funções críticas exigem uma confirmação adicional para evitar erros do usuário.", valor: 12 },
-    { id: "item32", texto: "Há recursos para o usuário revisar o que aprendeu.", valor: 14 },
-    { id: "item33", texto: "O usuário pode escolher aprofundar-se em tópicos de seu interesse ou necessidade.", valor: 15 },
-    { id: "item35", texto: "O usuário pode selecionar atividades adequadas ao seu nível de habilidade.", valor: 13 },
-    { id: "item36", texto: "A dificuldade das tarefas é visualmente destacada (ex: cores, ícones) para que o usuário entenda claramente o nível do desafio.", valor: 14 },
-    { id: "item37", texto: "A interface inclui atividades que desenvolvem as habilidades de leitura e escrita.", valor: 12 },
-    { id: "item38", texto: "Há recursos (ex: glossários, explicações) que ajudam a compreender melhor os textos.", valor: 15 },
+    { id: "item1", texto: "O texto é direto e fácil de entender, sem o uso de termos técnicos.", valor: 3.33 },
+    { id: "item2", texto: "A interface não apresenta mais informações do que o necessário para a tarefa.", valor: 3.33 },
+    { id: "item4", texto: "As fontes devem ter no mínimo 16px para corpo de texto e 18-24px para títulos e cabeçalhos.", valor: 3.33 },
+    { id: "item5", texto: "Elementos importantes são destacados através de tamanho, peso ou cor da fonte.", valor: 3.33 },
+    { id: "item6", texto: "Botões e toques interativos devem ter no mínimo 48px de altura.", valor: 3.33 },
+    { id: "item7", texto: "Botões devem ser posicionados na parte inferior da interface para evitar que a mão do usuário obstrua a tela durante a interação.", valor: 3.33 },
+    { id: "item8", texto: "Garanta que haja um espaçamento de 8px a 16px entre os botões para evitar cliques acidentais.", valor: 3.33 },
+    { id: "item9", texto: "Informações essenciais são apresentadas de diferentes formas (texto, ícones, áudio, etc.).", valor: 3.33 },
+    { id: "item11", texto: "Ícones são usados de forma clara e intuitiva, ajudando a ilustrar a informação sem confundir.", valor: 3.33 },
+    { id: "item12", texto: "As cores são usadas de forma consistente para destacar elementos importantes, gerar familiaridade e facilitar a compreensão.", valor: 3.33 },
+    { id: "item13", texto: "O conteúdo é apresentado em etapas, permitindo o aprendizado gradual.", valor: 3.33 },
+    { id: "item14", texto: "O usuário é informado sobre seu avanço de maneira clara.", valor: 3.33 },
+    { id: "item15", texto: "O design é limpo, evitando sobrecarga visual e permitindo foco nas tarefas principais.", valor: 3.33 },
+    { id: "item16", texto: "O usuário recebe respostas e orientações durante a navegação.", valor: 3.33 },
+    { id: "item17", texto: "A interface se ajusta com base no nível do usuário, oferecendo desafios apropriados.", valor: 3.33 },
+    { id: "item18", texto: "A interface oferece conteúdos e dicas que se adaptam às preferências e necessidades do usuário.", valor: 3.33 },
+    { id: "item19", texto: "O contraste entre texto e fundo é suficiente para garantir legibilidade em diferentes condições de iluminação.", valor: 3.33 },
+    { id: "item20", texto: "A interface adota navegação de único nível para evitar estruturas de menus complexos.", valor: 3.33 },
+    { id: "item22", texto: "O progresso é informado continuamente, incentivando o usuário a seguir adiante.", valor: 3.33 },
+    { id: "item23", texto: "O usuário sabe exatamente o que precisa fazer para continuar avançando.", valor: 3.33 },
+    { id: "item25", texto: "A velocidade das animações deve ser reduzida, permitindo que o usuário compreenda claramente a interação e os movimentos na interface.", valor: 3.33 },
+    { id: "item27", texto: "Quando necessário, a interface sugere melhorias de forma amigável e útil.", valor: 3.33 },
+    { id: "item28", texto: "O feedback é focado no encorajamento, não na crítica.", valor: 3.33 },
+    { id: "item29", texto: "O feedback é fornecido através de elementos visuais (ex: ícones, cores) e sonoros (ex: notificações, alertas) de forma integrada.", valor: 3.33 },
+    { id: "item30", texto: "Funções críticas exigem uma confirmação adicional para evitar erros do usuário.", valor: 3.33 },
+    { id: "item32", texto: "Há recursos para o usuário revisar o que aprendeu.", valor: 3.33 },
+    { id: "item33", texto: "O usuário pode escolher aprofundar-se em tópicos de seu interesse ou necessidade.", valor: 3.33 },
+    { id: "item35", texto: "O usuário pode selecionar atividades adequadas ao seu nível de habilidade.", valor: 3.33 },
+    { id: "item36", texto: "A dificuldade das tarefas é visualmente destacada (ex: cores, ícones) para que o usuário entenda claramente o nível do desafio.", valor: 3.33 },
+    { id: "item37", texto: "A interface inclui atividades que desenvolvem as habilidades de leitura e escrita.", valor: 3.33 },
+    { id: "item38", texto: "Há recursos (ex: glossários, explicações) que ajudam a compreender melhor os textos.", valor: 3.33 },
   ];
   
 
@@ -83,21 +83,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkbox.addEventListener("change", function () {
       if (this.checked) {
-        totalPoints += parseInt(this.dataset.valor);
+        totalPoints += parseFloat(this.dataset.valor);
       } else {
-        totalPoints -= parseInt(this.dataset.valor);
+        totalPoints -= parseFloat(this.dataset.valor);
       }
-
+    
       totalPoints = Math.max(0, Math.min(totalPoints, maxPoints));
-
-      pointsDisplay.textContent = totalPoints;
-
+    
+      pointsDisplay.textContent = totalPoints.toFixed(1);
+    
       updatePointsDisplay(totalPoints);
     });
+    
   });
 
   function updatePointsDisplay(points) {
-    pointsDisplay.textContent = points;
+    pointsDisplay.textContent = points % 1 === 0 ? points.toFixed(0) : points.toFixed(1);
 
     if (points == 0) {
       quoteElement.textContent = "Nada por enquanto... Vamos juntos nessa?";
