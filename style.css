@@ -139,6 +139,50 @@ header .documentation a p {
   font-weight: 600;
 }
 
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.masonry-grid img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #dadada;
+}
+
+.img-box {
+  position: relative;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.819);
+  color: #fafafa;
+  padding: 8px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  max-width: 90%;
+}
+
+.img-box:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.masonry-grid img:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+}
+
 .heuristics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -258,7 +302,7 @@ header .documentation a p {
 
 .checklist-wrapper {
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 2.5rem;
 }
 
 .checklist {
@@ -374,6 +418,10 @@ footer div p {
 .dark-mode .tabs {
   border-color: #262626;
   box-shadow: 0px 2px 2px 0px #e5e5e529;
+}
+
+.dark-mode .masonry-grid img {
+  border-color: #262626;
 }
 
 .dark-mode .heuristic-card label span {
