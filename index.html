@@ -25,160 +25,181 @@
           <p>Exemplos práticos</p>
         </a>
       </div> -->
-      <button aria-label="Alternar tema" id="mode"><span class="material-symbols-outlined">wb_sunny</span></button>  
+      <button aria-label="Alternar tema" id="mode"><span class="material-symbols-outlined">wb_sunny</span></button>
     </div>
   </header>
 
   <div class="container">
-    <div class="left-container">
-      <div class="left">
-        <div class="title">
-          <h1>Heurísticas AGE</h1>
-          <p>Heurísticas pedagógicas e de acessibilidade para aplicativos móveis para idosos</p>
-          <div class="cta">
-            <!-- <button aria-label="Alternar tema" id="mode">Contexto e motivações</button>   -->
-          </div>
-        </div>
-        <div class="heuristics-list">
-          <article>
-            <input id="article1" type="checkbox">
-            <label for="article1">
-              <h2>01</h2>
-              <p>Clareza e concisão</p>
-            </label>
-            <div>
-              A interface deve apresentar informações de forma clara e compreensível, evitando sobrecarga cognitiva. O
-              conteúdo deve ser direto e relevante para a tarefa do usuário.
-            </div>
-          </article>
-
-          <article>
-            <input id="article2" type="checkbox">
-            <label for="article2">
-              <h2>02</h2>
-              <p>Reforço e redundância estratégica</p>
-            </label>
-            <div>
-              A interface deve reforçar informações essenciais de maneira acessível, utilizando múltiplos formatos e
-              oferecendo opções de apresentação. O reforço deve ser feito de forma estratégica para facilitar o
-              aprendizado sem sobrecarregar o usuário.
-            </div>
-          </article>
-
-          <article>
-            <input id="article3" type="checkbox">
-            <label for="article3">
-              <h2>03</h2>
-              <p>Progresso gradual e confortável</p>
-            </label>
-            <div>
-              A interface deve permitir que os usuários avancem no conteúdo de maneira progressiva, garantindo uma
-              experiência confortável e reduzindo barreiras cognitivas e emocionais. A apresentação deve ser contextual
-              e
-              relevante para o usuário.
-            </div>
-          </article>
-
-          <article>
-            <input id="article4" type="checkbox">
-            <label for="article4">
-              <h2>04</h2>
-              <p>Compreensão e adaptação ao usuário</p>
-            </label>
-            <div>
-              A interface deve fornecer feedback contínuo e adaptar-se às necessidades do usuário, garantindo que a
-              experiência seja personalizada e relevante para seu nível de conhecimento e progresso.
-            </div>
-          </article>
-
-          <article>
-            <input id="article5" type="checkbox">
-            <label for="article5">
-              <h2>05</h2>
-              <p>Visibilidade do progresso</p>
-            </label>
-            <div>
-              A interface deve fornecer informações claras e contínuas sobre o avanço do usuário, garantindo que ele
-              compreenda seu progresso e se sinta motivado a continuar.
-            </div>
-          </article>
-
-          <article>
-            <input id="article6" type="checkbox">
-            <label for="article6">
-              <h2>06</h2>
-              <p>Adaptação e personalização</p>
-            </label>
-            <div>
-              A interface deve se ajustar às características individuais do usuário, proporcionando uma experiência
-              inclusiva e relevante com base em suas necessidades, preferências e limitações.
-            </div>
-          </article>
-
-          <article>
-            <input id="article7" type="checkbox">
-            <label for="article7">
-              <h2>07</h2>
-              <p>Feedback claro e motivador</p>
-            </label>
-            <div>
-              A interface deve fornecer feedback contínuo e construtivo, destacando conquistas e sugerindo melhorias de
-              forma clara e motivadora, sem causar frustração ao usuário.
-            </div>
-          </article>
-
-          <article>
-            <input id="article8" type="checkbox">
-            <label for="article8">
-              <h2>08</h2>
-              <p>Aprofundamento e exploração</p>
-            </label>
-            <div>
-              A interface deve permitir que o usuário aprofunde seu conhecimento por meio de conteúdos e atividades
-              complementares, proporcionando oportunidades de revisão e prática conforme suas necessidades.
-            </div>
-          </article>
-
-          <article>
-            <input id="article9" type="checkbox">
-            <label for="article9">
-              <h2>09</h2>
-              <p>Desafios adaptativos</p>
-            </label>
-            <div>
-              A interface deve oferecer desafios ajustáveis ao nível de habilidade do usuário, permitindo que ele
-              escolha
-              atividades com base em suas habilidades e progresso.
-            </div>
-          </article>
-
-          <article>
-            <input id="article10" type="checkbox">
-            <label for="article10">
-              <h2>10</h2>
-              <p>Apoio ao desenvolvimento linguístico</p>
-            </label>
-            <div>
-              A interface deve oferecer atividades que incentivem o desenvolvimento das habilidades de leitura, escrita
-              e
-              interpretação, promovendo a compreensão e a produção de linguagem escrita de forma acessível e gradual.
-            </div>
-          </article>
-        </div>
+    <div class="title">
+      <h1>Heurísticas AGE</h1>
+      <p>Heurísticas pedagógicas e de acessibilidade para aplicativos móveis para idosos</p>
+      <div class="cta">
+        <!-- <button aria-label="Alternar tema" id="mode">Contexto e motivações</button>   -->
       </div>
     </div>
-    <div class="right-container">
-      <aside class="right">
+
+    <div class="tabs">
+      <div class="tab active" data-tab="exemplos">Exemplos</div>
+      <div class="tab" data-tab="heuristicas">Heurísticas</div>
+      <div class="tab" data-tab="checklist">Checklist</div>
+    </div>
+
+    <div id="exemplos" class="tab-content active">
+      <h3>Exemplos de Protótipos</h3>
+      <p>Aqui você pode inserir imagens ou embeds dos seus protótipos com explicações.</p>
+    </div>
+
+    <div id="heuristicas" class="tab-content">
+      <div class="heuristics-grid">
+        <!-- Heurística 1 -->
+        <article class="heuristic-card">
+          <label for="article1">
+            <h2>01</h2>
+            <span class="material-symbols-outlined">wb_sunny</span>
+            <p>Clareza e concisão</p>
+          </label>
+          <div>
+            A interface deve apresentar informações de forma clara e compreensível, evitando sobrecarga cognitiva. O
+            conteúdo deve ser direto e relevante para a tarefa do usuário.
+          </div>
+        </article>
+
+        <!-- Heurística 2 -->
+        <article class="heuristic-card">
+          <label for="article2">
+            <h2>02</h2>
+            <span class="material-symbols-outlined">cached</span>
+            <p>Reforço e redundância estratégica</p>
+          </label>
+          <div>
+            A interface deve reforçar informações essenciais de maneira acessível, utilizando múltiplos formatos e
+            oferecendo opções de apresentação. O reforço deve ser feito de forma estratégica para facilitar o
+            aprendizado sem sobrecarregar o usuário.
+          </div>
+        </article>
+
+        <!-- Heurística 3 -->
+        <article class="heuristic-card">
+          <label for="article3">
+            <h2>03</h2>
+            <span class="material-symbols-outlined">trending_up</span>
+            <p>Progresso gradual e confortável</p>
+          </label>
+          <div>
+            A interface deve permitir que os usuários avancem no conteúdo de maneira progressiva, garantindo uma
+            experiência confortável e reduzindo barreiras cognitivas e emocionais. A apresentação deve ser contextual
+            e relevante para o usuário.
+          </div>
+        </article>
+
+        <!-- Heurística 4 -->
+        <article class="heuristic-card">
+          <label for="article4">
+            <h2>04</h2>
+            <span class="material-symbols-outlined">feedback</span>
+            <p>Compreensão e adaptação ao usuário</p>
+          </label>
+          <div>
+            A interface deve fornecer feedback contínuo e adaptar-se às necessidades do usuário, garantindo que a
+            experiência seja personalizada e relevante para seu nível de conhecimento e progresso.
+          </div>
+        </article>
+
+        <!-- Heurística 5 -->
+        <article class="heuristic-card">
+          <label for="article5">
+            <h2>05</h2>
+            <span class="material-symbols-outlined">person_raised_hand</span>
+            <p>Visibilidade do progresso</p>
+          </label>
+          <div>
+            A interface deve fornecer informações claras e contínuas sobre o avanço do usuário, garantindo que ele
+            compreenda seu progresso e se sinta motivado a continuar.
+          </div>
+        </article>
+
+        <!-- Heurística 6 -->
+        <article class="heuristic-card">
+          <label for="article6">
+            <h2>06</h2>
+            <span class="material-symbols-outlined">favorite</span>
+            <p>Adaptação e personalização</p>
+          </label>
+          <div>
+            A interface deve se ajustar às características individuais do usuário, proporcionando uma experiência
+            inclusiva e relevante com base em suas necessidades, preferências e limitações.
+          </div>
+        </article>
+
+        <!-- Heurística 7 -->
+        <article class="heuristic-card">
+          <label for="article7">
+            <h2>07</h2>
+            <span class="material-symbols-outlined">trophy</span>
+            <p>Feedback claro e motivador</p>
+          </label>
+          <div>
+            A interface deve fornecer feedback contínuo e construtivo, destacando conquistas e sugerindo melhorias de
+            forma clara e motivadora, sem causar frustração ao usuário.
+          </div>
+        </article>
+
+        <!-- Heurística 8 -->
+        <article class="heuristic-card">
+          <label for="article8">
+            <h2>08</h2>
+            <span class="material-symbols-outlined">travel_explore</span>
+            <p>Aprofundamento e exploração</p>
+          </label>
+          <div>
+            A interface deve permitir que o usuário aprofunde seu conhecimento por meio de conteúdos e atividades
+            complementares, proporcionando oportunidades de revisão e prática conforme suas necessidades.
+          </div>
+        </article>
+
+        <!-- Heurística 9 -->
+        <article class="heuristic-card">
+          <label for="article9">
+            <h2>09</h2>
+            <span class="material-symbols-outlined">gesture_select</span>
+            <p>Desafios adaptativos</p>
+          </label>
+          <div>
+            A interface deve oferecer desafios ajustáveis ao nível de habilidade do usuário, permitindo que ele
+            escolha atividades com base em suas habilidades e progresso.
+          </div>
+        </article>
+
+        <!-- Heurística 10 -->
+        <article class="heuristic-card">
+          <label for="article10">
+            <h2>10</h2>
+            <span class="material-symbols-outlined">school</span>
+            <p>Apoio ao desenvolvimento linguístico</p>
+          </label>
+          <div>
+            A interface deve oferecer atividades que incentivem o desenvolvimento das habilidades de leitura, escrita
+            e interpretação, promovendo a compreensão e a produção de linguagem escrita de forma acessível e gradual.
+          </div>
+        </article>
+      </div>
+    </div>
+
+
+    <div id="checklist" class="tab-content">
+      <div>
         <div class="points">
-          <p class="number">0</p>
-          <p class="quote">Nada por enquanto... Vamos juntos nessa?</p>
+          <div>
+            <p class="number">0</p>
+            <p class="quote">Nada por enquanto... Vamos juntos nessa?</p>
+          </div>
           <img src="/assets/sentiment_very_dissatisfied.svg" alt="icon" class="icon" />
         </div>
         <div class="checklist-wrapper">
           <div class="checklist">
           </div>
         </div>
-      </aside>
+      </div>
     </div>
   </div>
 

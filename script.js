@@ -29,6 +29,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+
   const checklistItems = [
     { id: "item1", texto: "O texto é direto e fácil de entender, sem o uso de termos técnicos.", valor: 3.33 },
     { id: "item2", texto: "A interface não apresenta mais informações do que o necessário para a tarefa.", valor: 3.33 },
@@ -63,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "item38", texto: "Há recursos (ex: glossários, explicações) que ajudam a compreender melhor os textos.", valor: 3.33 },
   ];
   
-
   checklistItems.forEach((item) => {
     const checklistItem = document.createElement("div");
     checklistItem.classList.add("checklist-item");
@@ -115,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
     
     else if (points <= 75) {
-      quoteElement.textContent = "No caminho! Ainda tem alguns detalhes para ajustar";
+      quoteElement.textContent = "No caminho! Ainda faltam alguns detalhes para ajustar";
       iconElement.src = "assets/sentiment_neutral.svg";
       iconElement.alt = "Ícone de emoção neutro";
       document.querySelector(".points").style.backgroundColor = "#db8803";
