@@ -17,6 +17,22 @@ body {
   background-color: #fafafa;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+input:focus {
+  outline: 2px solid #575b79;
+  outline-offset: 2px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -49,6 +65,7 @@ body {
 
 .tab-content {
   display: none;
+  transition: all 0.3s ease;
 }
 
 .tab-content.active {
@@ -85,7 +102,8 @@ header button {
   cursor: pointer;
 }
 
-header button:hover, header .documentation a:hover {
+header button:hover,
+header .documentation a:hover {
   opacity: 0.6;
 }
 
@@ -209,12 +227,7 @@ header .documentation a p {
 }
 
 .heuristic-card label span {
-  background-image: linear-gradient(
-    45deg,
-    #badcffa3, 
-    #c4baffa3,
-    #ffbadea3  
-  );
+  background-image: linear-gradient(45deg, #badcffa3, #c4baffa3, #ffbadea3);
   padding: 8px;
   border-radius: 8px;
   color: #262626;
@@ -425,12 +438,7 @@ footer div p {
 }
 
 .dark-mode .heuristic-card label span {
-  background-image: linear-gradient(
-    45deg,
-    #8dabc7a3, 
-    #8a84b2a3,
-    #c88baba3  
-  );
+  background-image: linear-gradient(45deg, #8dabc7a3, #8a84b2a3, #c88baba3);
   color: #e5e5e5;
 }
 
@@ -488,7 +496,7 @@ footer div p {
 }
 
 .checklist::-webkit-scrollbar {
-  width: 6px; 
+  width: 6px;
 }
 
 .checklist::-webkit-scrollbar-track {
@@ -496,13 +504,15 @@ footer div p {
   border-radius: 10px;
 }
 
-.checklist::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+.checklist::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
   background-color: #a0a0a0;
   border-radius: 10px;
   border: 1px solid #f0f0f0;
 }
 
-.checklist::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:hover {
+.checklist::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
 
@@ -511,41 +521,67 @@ footer div p {
   border-radius: 10px;
 }
 
-.dark-mode .checklist::-webkit-scrollbar-thumb, .dark-mode::-webkit-scrollbar-thumb {
+.dark-mode .checklist::-webkit-scrollbar-thumb,
+.dark-mode::-webkit-scrollbar-thumb {
   background-color: #353535;
   border-radius: 10px;
   border: 1px solid #2a2a2a;
 }
 
-.dark-mode .checklist::-webkit-scrollbar-thumb:hover, .dark-mode::-webkit-scrollbar-thumb:hover {
+.dark-mode .checklist::-webkit-scrollbar-thumb:hover,
+.dark-mode::-webkit-scrollbar-thumb:hover {
   background-color: #565656;
 }
 
-@media screen and (max-width: 1000px) {
-  .left-container {
-    grid-column: span 6 / span 6;
+@media screen and (max-width: 376px) {
+  .tabs {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
-  
-  .right-container {
-    grid-column: span 6 / span 6;
-    grid-column-start: 7;
+
+  .tab {
+    padding: 0.75rem 0.75rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    margin: 0 2rem;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .tabs {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heuristics-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .heuristic-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .heuristic-card label {
+    gap: 16px;
+  }
+
+  .points {
+    width: fit-content;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .left-container {
-    margin: 8rem 0 0 0;
-  }
-
-  .right-container {
-    margin: 0 0 3rem 0;
-  }
-
   footer div {
     width: 60%;
   }
