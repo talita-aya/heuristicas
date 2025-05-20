@@ -90,7 +90,20 @@ header p {
   font-weight: bold;
 }
 
-header button {
+header .right-box a {
+  gap: 0.4rem;
+}
+
+header .right-box a p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+header .right-box a span {
+  font-size: 18px;
+}
+
+header button, header .right-box a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,6 +326,38 @@ header .documentation a p {
   right: 0px;
 }
 
+.checklist-group {
+  border: 1px solid #d4d4d4;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #fafafa;
+}
+
+.group-toggle {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.group-toggle:hover {
+  opacity: 0.7;
+}
+
+.group-toggle[aria-expanded="true"] {
+  box-shadow: none;
+  background-image: linear-gradient(45deg, #badcffa3, #c4baffa3, #ffbadea3);
+}
+
+.group-items {
+  padding: 1rem 0;
+}
+
 .checklist-wrapper {
   position: relative;
   padding-bottom: 2.5rem;
@@ -321,7 +366,7 @@ header .documentation a p {
 .checklist {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .checklist-item {
@@ -331,6 +376,12 @@ header .documentation a p {
   border: 1px solid #d4d4d4;
   padding: 24px;
   border-radius: 16px;
+  margin-bottom: 16px;
+  background-color: #fafafa;
+}
+
+.checklist-item:last-child {
+  margin-bottom: 0;
 }
 
 .checklist-item input[type="checkbox"] {
@@ -422,7 +473,7 @@ footer div p {
   border-color: #262626;
 }
 
-.dark-mode header button {
+.dark-mode header button, .dark-mode header .right-box a {
   background-color: #0a0a0a;
   border-color: #262626;
   box-shadow: 0px 2px 2px 0px #e5e5e529;
@@ -462,6 +513,7 @@ footer div p {
 
 .dark-mode .checklist-item {
   border-color: #373737;
+  background-color: #0a0a0a;
 }
 
 .dark-mode .checklist-item input[type="checkbox"] {
@@ -531,6 +583,20 @@ footer div p {
 .dark-mode .checklist::-webkit-scrollbar-thumb:hover,
 .dark-mode::-webkit-scrollbar-thumb:hover {
   background-color: #565656;
+}
+
+.dark-mode .checklist-group {
+  border-color: #373737;
+  background-color: #0a0a0a;
+  box-shadow: 0px 2px 2px 0px #e5e5e529;
+}
+
+.dark-mode .group-toggle {
+  background-color: #0a0a0a;
+}
+
+.dark-mode .group-toggle[aria-expanded="true"] {
+  background-image: linear-gradient(45deg, #8dabc7a3, #8a84b2a3, #c88baba3);
 }
 
 @media screen and (max-width: 376px) {
