@@ -170,53 +170,9 @@ header .documentation a p {
   font-weight: 600;
 }
 
-.masonry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 2rem;
-  padding-bottom: 2.5rem;
-}
-
-.masonry-grid img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  border: 1px solid #dadada;
-}
-
-.img-box {
-  position: relative;
-}
-
-.description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.819);
-  color: #fafafa;
-  padding: 8px;
-  border-radius: 8px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  max-width: 90%;
-}
-
-.img-box:hover .description {
-  opacity: 1;
-  visibility: visible;
-}
-
-.masonry-grid img:hover {
-  transform: scale(1.03);
-  opacity: 0.8;
-}
-
 .heuristics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   gap: 24px;
   padding-bottom: 2.5rem;
 }
@@ -225,18 +181,75 @@ header .documentation a p {
   border: 1px solid #d4d4d4;
   border-radius: 16px;
   padding: 40px;
-  gap: 16px;
+  gap: 1rem;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+
+.heuristic-card .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 60px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  border: 1px solid #dadada;
+  z-index: 9;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.lightbox.show {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 
 .heuristic-card label {
   display: flex;
   gap: 10px;
   align-items: center;
+  width: 100%;
 }
 
 .heuristic-card label span {
@@ -269,7 +282,7 @@ header .documentation a p {
 }
 
 .heuristic-card div {
-  line-height: 24px;
+  line-height: 26px;
 }
 
 .points {
@@ -484,10 +497,6 @@ footer div p {
   box-shadow: 0px 2px 2px 0px #e5e5e529;
 }
 
-.dark-mode .masonry-grid img {
-  border-color: #262626;
-}
-
 .dark-mode .heuristic-card label span {
   background-image: linear-gradient(45deg, #8dabc7a3, #8a84b2a3, #c88baba3);
   color: #e5e5e5;
@@ -600,15 +609,7 @@ footer div p {
 }
 
 @media screen and (max-width: 376px) {
-  .tabs {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
 
-  .tab {
-    padding: 0.75rem 0.75rem;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -626,6 +627,27 @@ footer div p {
     justify-content: space-between;
   }
 
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heuristic-card label {
+    gap: 16px;
+  }
+
+  .heuristic-card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .points {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .heuristics-grid {
     width: 100%;
     display: grid;
@@ -638,16 +660,6 @@ footer div p {
     margin: 0 auto;
   }
 
-  .heuristic-card label {
-    gap: 16px;
-  }
-
-  .points {
-    width: fit-content;
-  }
-}
-
-@media screen and (max-width: 700px) {
   footer div {
     width: 60%;
   }

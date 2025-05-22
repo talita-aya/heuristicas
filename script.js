@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
   const checklistGroups = [
     {
       nome: "Clareza e legibilidade",
@@ -366,13 +365,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = groupDiv.querySelector(".group-toggle");
 
     if (areAllChecked(groupDiv)) {
-      groupDiv.style.backgroundColor = "#339e2528"
-      toggleButton.style.background = "#339e2528"
-      toggleButton.style.backgroundColor = "transparent"
+      groupDiv.style.backgroundColor = "#339e2528";
+      toggleButton.style.background = "#339e2528";
+      toggleButton.style.backgroundColor = "transparent";
       toggleButton.textContent = `${group.nome} — ${checkedCount} de ${group.items.length}`;
     } else {
-      groupDiv.style.backgroundColor = ""
-      toggleButton.style.background = ""
+      groupDiv.style.backgroundColor = "";
+      toggleButton.style.background = "";
       toggleButton.textContent = `${group.nome} — ${checkedCount} de ${group.items.length}`;
     }
   }
@@ -423,4 +422,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Atualizar o display inicial dos pontos
   updatePointsDisplay(totalPoints);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const thumbnails = document.querySelectorAll(".thumbnail");
+  const lightbox = document.createElement("div");
+  lightbox.classList.add("lightbox");
+  document.body.appendChild(lightbox);
+
+  const fullImage = document.createElement("img");
+  lightbox.appendChild(fullImage);
+
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      const fullSrc = thumb.getAttribute("data-full");
+      fullImage.src = fullSrc;
+      lightbox.classList.add("show");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+    fullImage.src = "";
+  });
 });
