@@ -42,6 +42,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const checklistGroups = [
     {
+      nome: "Acessibilidade e personalização",
+      items: [
+        {
+          id: "item15",
+          texto:
+            "A interface permite ajustar tamanho de fonte, cores, níveis de contraste e ativar/desativar animações.",
+          valor: 2.86,
+        },
+        {
+          id: "item16",
+          texto:
+            "A interface respeita e mantém as configurações de acessibilidade nativas do sistema operacional (ex: aumento de fonte do celular, alto contraste, leitor de tela).",
+          valor: 2.86,
+        },
+        {
+          id: "item17",
+          texto:
+            "A interface é acessível a diferentes tipos de usuários, incluindo aqueles com limitações de mobilidade, visão ou audição.",
+          valor: 2.86,
+        },
+        {
+          id: "item18",
+          texto:
+            "O conteúdo e os desafios se adaptam ao progresso e às preferências do usuário.",
+          valor: 2.86,
+        },
+      ],
+    },
+    {
       nome: "Clareza e legibilidade",
       items: [
         {
@@ -66,35 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
           id: "item4",
           texto:
             "O contraste entre texto e fundo é suficiente para garantir legibilidade em diferentes condições de iluminação.",
-          valor: 2.86,
-        },
-      ],
-    },
-    {
-      nome: "Hierarquia visual e organização",
-      items: [
-        {
-          id: "item5",
-          texto:
-            "Elementos importantes são destacados através de tamanho, peso ou cor da fonte.",
-          valor: 2.86,
-        },
-        {
-          id: "item6",
-          texto:
-            "O layout é limpo e prioriza foco nas tarefas principais, evitando sobrecarga visual.",
-          valor: 2.86,
-        },
-        {
-          id: "item7",
-          texto:
-            "O conteúdo é apresentado em etapas, permitindo o aprendizado gradual.",
-          valor: 2.86,
-        },
-        {
-          id: "item8",
-          texto:
-            "As cores são usadas de forma consistente para destacar elementos importantes, gerar familiaridade e facilitar a compreensão.",
           valor: 2.86,
         },
       ],
@@ -141,64 +141,30 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     {
-      nome: "Acessibilidade e personalização",
+      nome: "Hierarquia visual e organização",
       items: [
         {
-          id: "item15",
+          id: "item5",
           texto:
-            "A interface permite ajustar tamanho de fonte, cores, níveis de contraste e ativar/desativar animações.",
+            "Elementos importantes são destacados através de tamanho, peso ou cor da fonte.",
           valor: 2.86,
         },
         {
-          id: "item16",
+          id: "item6",
           texto:
-            "A interface respeita e mantém as configurações de acessibilidade nativas do sistema operacional (ex: aumento de fonte do celular, alto contraste, leitor de tela).",
+            "O layout é limpo e prioriza foco nas tarefas principais, evitando sobrecarga visual.",
           valor: 2.86,
         },
         {
-          id: "item17",
+          id: "item7",
           texto:
-            "A interface é acessível a diferentes tipos de usuários, incluindo aqueles com limitações de mobilidade, visão ou audição.",
+            "O conteúdo é apresentado em etapas, permitindo o aprendizado gradual.",
           valor: 2.86,
         },
         {
-          id: "item18",
+          id: "item8",
           texto:
-            "O conteúdo e os desafios se adaptam ao progresso e às preferências do usuário.",
-          valor: 2.86,
-        },
-      ],
-    },
-    {
-      nome: "Multimodalidade e reforço de informações",
-      items: [
-        {
-          id: "item19",
-          texto:
-            "Informações essenciais são apresentadas de diferentes formas (texto, ícones, áudio, etc.).",
-          valor: 2.86,
-        },
-        {
-          id: "item20",
-          texto:
-            "Ícones são usados de forma clara e intuitiva, acompanhados de rótulos textuais ou legendas explicativas para facilitar a compreensão.",
-          valor: 2.86,
-        },
-        {
-          id: "item21",
-          texto:
-            "A interface combina sinais visuais (ícones, cores) e auditivos (sons, alertas) para reforçar mensagens e respostas do sistema.",
-          valor: 2.86,
-        },
-        {
-          id: "item22",
-          texto:
-            "O feedback utiliza mensagens positivas e construtivas, evitando termos negativos ou punitivos.",
-          valor: 2.86,
-        },
-        {
-          id: "item23",
-          texto: "Há recursos para o usuário revisar o que aprendeu.",
+            "As cores são usadas de forma consistente para destacar elementos importantes, gerar familiaridade e facilitar a compreensão.",
           valor: 2.86,
         },
       ],
@@ -233,6 +199,40 @@ document.addEventListener("DOMContentLoaded", function () {
           id: "item28",
           texto:
             "Quando necessário, a interface sugere melhorias de forma amigável e útil.",
+          valor: 2.86,
+        },
+      ],
+    },
+    {
+      nome: "Multimodalidade e reforço de informações",
+      items: [
+        {
+          id: "item19",
+          texto:
+            "Informações essenciais são apresentadas de diferentes formas (texto, ícones, áudio, etc.).",
+          valor: 2.86,
+        },
+        {
+          id: "item20",
+          texto:
+            "Ícones são usados de forma clara e intuitiva, acompanhados de rótulos textuais ou legendas explicativas para facilitar a compreensão.",
+          valor: 2.86,
+        },
+        {
+          id: "item21",
+          texto:
+            "A interface combina sinais visuais (ícones, cores) e auditivos (sons, alertas) para reforçar mensagens e respostas do sistema.",
+          valor: 2.86,
+        },
+        {
+          id: "item22",
+          texto:
+            "O feedback utiliza mensagens positivas e construtivas, evitando termos negativos ou punitivos.",
+          valor: 2.86,
+        },
+        {
+          id: "item23",
+          texto: "Há recursos para o usuário revisar o que aprendeu.",
           valor: 2.86,
         },
       ],
