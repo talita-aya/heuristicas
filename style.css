@@ -41,7 +41,7 @@ input:focus {
   gap: 32px;
 }
 
-.container span {
+.container .title span {
   font-size: 12px;
   font-weight: normal;
   font-style: italic;
